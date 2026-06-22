@@ -106,10 +106,6 @@ const config: Config = {
               href: 'https://x.com/projectnode1',
             },
             {
-              label: 'X',
-              href: 'https://x.com/projectnode1',
-            },
-            {
               label: 'YouTube',
               href: 'https://www.youtube.com/@projectnode1',
             },
