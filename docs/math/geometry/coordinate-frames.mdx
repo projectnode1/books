@@ -1,0 +1,55 @@
+---
+sidebar_position: 2
+---
+
+# Coordinate Frames
+
+A coordinate frame is a reference system consisting of an origin and 
+a set of orthogonal axes used to define the position and orientation 
+of points, vectors, or objects relative to that frame.
+
+Attaching it to a point on a rigid body allows us to describe the world
+in terms of the body's local coordinate system. There are various frames
+like the world frame, the body frame, and the sensor frame. 
+
+In robotic manipulation, simulation, and computer graphics 
+applications, multiple coordinate frames are organized in a hierarchical
+structure. For example, a sensor frame may be attached to a robot link 
+frame, which is attached to the robot base frame, which is defined relative 
+to the world frame.
+
+Robotics primarily utilizes right-handed coordinate systems because they 
+are consistent with the conventions used throughout mathematics, physics, 
+and engineering. This consistency simplifies the application of concepts 
+such as rotations, cross products, angular velocities, and rigid-body 
+transformations, and promotes interoperability across disciplines and 
+software systems.
+
+### Right Hand Coordinate System Example
+- There is a coordinate frame with x, y, and z axes that follow the 
+right-hand rule then let's say the thumb points towards z axis in positive
+direction, we have open hand towards x and then when we curl. Then we 
+reach the y axis.
+
+### Robot Frame
+We will apply the following convention:
+- Origin (O) will the center of mass of the robot
+- The x-axis will point in the forward direction of the robot
+- The y-axis will point to the left of the robot
+- The z-axis will point upwards from the robot
+
+### Camera Frame
+We will apply the following convention:
+- Origin (O) will be center of the camera
+- The x-axis will point to the right of the camera
+- The y-axis will point downwards from the camera
+- The z-axis will point in the forward direction of the camera towards the scene
+
+### Image Frame
+We will apply the following convention, when looking at the image:
+- Origin (O) will be top-left corner of the image
+- The x-axis will point to the right of the image
+- The y-axis will point downwards from the image
+
+## Further Reading:
+- [VNAV MIT Course](https://vnav.mit.edu/material/02-03-basic3Dgeometry-notes.pdf)

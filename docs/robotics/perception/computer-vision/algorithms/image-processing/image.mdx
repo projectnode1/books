@@ -1,0 +1,23 @@
+---
+sidebar_position: 2
+---
+
+# Image Representation
+
+We discuss the representation of image in digital format.
+
+There are two ways to broadly divide digital images:
+- **Raster images**: These are pixel-based images, where each pixel has a specific intensity or color value.
+- **Vector images**: These are mathematical representations of images, where each element is 
+defined by mathematical equations.
+
+Raster images can be broadly classified into:
+- **Grayscale images**: These images have only one channel, representing the intensity of each pixel.
+- **Color images**: These images have multiple channels, typically representing the red, green, and blue (RGB) components of each pixel.
+
+There are two common memory layouts for representing multi-channel raster images:
+
+- **Structure of Arrays (SoA) / planar representation**: Each channel is stored as a separate 2D array. 
+For example, an RGB image has one array for red, one for green, and one for blue. 
+- **Array of Structures (AoS) / interleaved representation**: Each pixel stores all its channel values together.
+ For example, each pixel may store `(R, G, B)`.
