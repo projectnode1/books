@@ -1,0 +1,43 @@
+---
+sidebar_position: 4
+---
+
+# Bit Manipulation
+
+Bit manipulation means directly performing operations on bits using operators
+such as AND, OR, XOR, NOT, and bit shifts. It is widely used in low-level 
+programming, embedded systems, and 
+performance-critical applications. By directly manipulating bits, we can 
+represent data compactly and control system resources more efficiently and
+precisely.
+
+It's useful to know if you care about the following questions:
+- What is bit value at ith position in a byte? How to set it to different value?
+- Count the set bits in a number
+- How to clear/set bits after a specific position?
+- Extract last set bit from a number
+
+#### Convert Binary to Decimal
+Let's say we have pk,pk-1,pk-2,...,p1,p0 representing the bits of a binary number.
+The decimal value can be calculated as:
+2^k x pk + 2^(k-1) x pk-1 + ... + 2^1 x p1 + 2^0 xp0
+
+#### Unsigned vs Signed Integers
+We can represent both unsigned and signed integers with our bits. The first bit(rightmost)
+is used as the sign bit. If the sign bit is 0, the number is positive; if it is 1,
+the number is negative.
+
+If a number is unsigned integer, then the range is 0 to 2^n - 1, where n is 
+the number of bits.
+
+If a number is signed integer, then the range is -2^(n-1) to 2^(n-1) - 1, where n is 
+the number of bits.
+
+One may ask, what's the relationship between signed and unsigned integers? and
+what if we try to store a number that is out of the range of our data type?
+
+For more information, refer to below resources.
+
+#### References
+- [Wikipedia](https://en.wikipedia.org/wiki/Bit_manipulation)
+- [CP Algorithms](https://cp-algorithms.com/algebra/bit-manipulation.html)
